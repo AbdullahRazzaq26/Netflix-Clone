@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Pakistan - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    }
+
+    .bg img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        max-width: 100%;
+        max-height: 72.7%;
+        object-fit: cover;
+        overflow: hidden;
+
+
+    }
+
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.161), rgba(0, 0, 0, 0.201));
+        opacity: 0.3;
+    }
+
+    .logo {
+        position: absolute;
+        width: 185px;
+        left: 190px;
+        top: -40px;
+        display: inline-block;
+
+
+    }
+
+    .logo img {
+        margin-left: 170px;
+        width: 165px;
+    }
+
+    .logo button {
+        background-color: rgb(193, 17, 26);
+        border: 0px solid black;
+        border-radius: 4px;
+        width: 80px;
+        height: 40px;
+        color: white;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 1500px;
+        margin-bottom: 250px;
+        font-size: large;
+        position: absolute;
+        left: 20px;
+        top: 75px;
+    }
+
+    .logo button {
+        margin-left: 1250px;
+        margin-top: -20px;
+    }
+
+    .logo button:hover {
+        background-color: rgba(193, 17, 26, 0.815);
+    }
+
+    .text h1 {
+        font-size: 50px;
+        margin: 0;
+        position: absolute;
+        top: 260px;
+        left: 450px;
+        font-weight: bolder;
+    }
+
+    .text p {
+        font-size: 25px;
+        margin: 0;
+        position: absolute;
+        top: 355px;
+        left: 525px;
+    }
+
+    .text input {
+        background-color: rgba(0, 0, 0, 0.549);
+        border: 1px solid rgba(255, 255, 255, 0.628);
+        width: 370px;
+        height: 35px;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        font-size: large;
+    }
+
+    .text input::after {
+        background-color: rgba(0, 0, 0, 0.517);
+    }
+
+    .text button {
+        background-color: rgb(229, 9, 20);
+        border: none;
+        color: white;
+        width: 240px;
+        height: 60px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .text button:hover {
+        background-color: rgba(229, 9, 20, 0.581);
+    }
+
+    hr {
+        border: 5px solid rgb(35, 35, 35);
+        margin-top: 700px;
+    }
+
+    .left {
+        margin-left: 370px;
+        font-size: 25px;
+        display: inline-block;
+
+    }
+
+    .left h1 {
+        margin-bottom: 10px;
+    }
+
+
+    .right {
+        display: inline-block;
+        margin-left: 35px;
+        position: relative;
+    }
+
+    .vid {
+        margin-left: 1080px;
+        position: absolute;
+        top: 810px;
+    }
+
+    .hmm {
+        border: 5px solid rgb(35, 35, 35);
+        margin-top: 70px;
+    }
+
+    .mob {
+        margin-left: 320px;
+        position: relative;
+    }
+
+    .st {
+        background-color: rgba(0, 0, 0, 0.961);
+        border: 1px solid rgba(255, 255, 255, 0.674);
+        border-radius: 5px;
+        width: 300px;
+        height: 105px;
+        padding: 10px;
+        margin-left: 480px;
+        top: 1615px;
+        position: absolute;
+        display: inline-block;
+    }
+
+    .txt {
+        display: inline-block;
+        position: absolute;
+        left: 90px;
+    }
+
+    span {
+        color: #0071eb;
+        font-weight: 400;
+    }
+
+    .gif {
+        margin-left: 730px;
+        position: absolute;
+        top: 1620px;
+    }
+
+    .right1 {
+        margin-left: 1000px;
+        position: absolute;
+        top: 1500px;
+        font-size: 23px;
+    }
+
+    .right1 h1 {
+        margin-bottom: 10px;
+
+    }
+
+    .left2 {
+        font-size: 23px;
+        margin-left: 490px;
+        margin-top: 100px;
+    }
+
+    .left2 h1 {
+        margin-bottom: 13px;
+    }
+
+    .left3 {
+        margin-left: 350px;
+    }
+
+    .right2 {
+        font-size: 25px;
+        margin-left: 1000px;
+        position: absolute;
+        top: 2400px;
+    }
+
+    .right2 h1 {
+        margin-bottom: 13px;
+    }
+
+    .que {
+        font-size: 25px;
+    }
+
+    .que button {
+        width: 1200px;
+        border: none;
+        height: 75px;
+        margin: 5px;
+        background-color: rgb(45, 45, 45);
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        text-align: start;
+        padding-left: 15px;
+    }
+
+    .que button:hover {
+        background-color: rgba(141, 139, 139, 0.443);
+    }
+
+    .hmmm p {
+        color: white;
+        padding-top: 35px;
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .list a {
+        color: rgba(255, 255, 255, 0.788);
+        margin-left: 350px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 15px;
+    }
+
+    select {
+        background-color: rgba(26, 26, 26, 0.661);
+        color: white;
+        width: 110px;
+        height: 35px;
+        border-radius: 3px;
+        margin-left: 365px;
+    }
+    .links {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    .list1 a {
+        color: rgba(255, 255, 255, 0.788);
+        margin-left: 650px;
+        font-size: 15px;
+        text-decoration: none;
+
+    }
+
+    .links1 {
+        margin-top: 55px;
+        margin-bottom: 55px;
+        position: absolute;
+        top: 3605px;
+    }
+    .list2 a {
+        color: rgba(255, 255, 255, 0.788);
+        margin-left: 950px;
+        font-size: 15px;
+        text-decoration: none;
+
+    }
+
+    .links2 {
+        margin-top: 55px;
+        margin-bottom: 55px;
+        position: absolute;
+        top: 3605px;
+    }
+    .list3 a {
+        color: rgba(255, 255, 255, 0.788);
+        margin-left: 1250px;
+        font-size: 15px;
+        text-decoration: none;
+
+    }
+
+    .links3 {
+        margin-top: 55px;
+        margin-bottom: 55px;
+        position: absolute;
+        top: 3605px;
+    }
+</style>
+
+<body>
+    <div class="bg">
+        <img src="netflix main.jpg" alt="">
+    </div>
+
+    <div class="logo">
+        <img src="Netflix-logo.png" alt="">
+        <button><b>Sign In</b></button>
+        <br>
+
+    </div>
+    <div class="text">
+        <center>
+            <h1>Unlimited movies, TV shows, and more
+            </h1>
+            <p>Watch anywhere. Cancel anytime.
+                <br>
+                <br>
+                Ready to watch? Enter your email to create or restart your membership.
+                <br>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <button>Get Started ></button>
+            </p>
+        </center>
+    </div>
+    <hr>
+    <div class="left">
+        <h1>Enjoy on your TV</h1>
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast,<br>
+            Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="vid">
+        <video src="video tv.m4v" autoplay loop></video>
+
+    </div>
+    <div class="right">
+        <img src="tv.png" alt="">
+    </div>
+    <hr class="hmm">
+    <div class="left1">
+        <div class="mob">
+            <img src="mobile.jpg" alt="">
+        </div>
+        <div class="st">
+            <img src="boxshot.png" alt="" width="70px">
+            <div class="txt">
+                <p><b>Stranger Things</b></p><br>
+                <span>
+                    <p>Downloading...</p>
+                </span>
+            </div>
+        </div>
+        <div class="gif">
+            <img src="download-icon.gif" alt="" width="70px">
+        </div>
+    </div>
+    <div class="right1">
+        <h1>Download your shows <br> to watch offline
+        </h1>
+        <p>Save your favorites easily and always have something <br> to watch.
+        </p>
+    </div>
+    <hr class="hmm">
+    <div class="left2">
+        <h1>Watch <br> everywhere</h1>
+        <p>Stream unlimited movies and TV <br> shows on your phone, tablet, laptop, <br> and TV.</p>
+    </div>
+    <hr class="hmm">
+    <div class="left3">
+        <img src="kid.png" alt="">
+    </div>
+    <div class="right2">
+        <h1>Create profiles for kids</h1>
+        <p>Send kids on adventures with their favorite characters <br> in a space made just for them—free with your <br>
+            membership.</p>
+    </div>
+    <hr class="hmm">
+    <div class="que">
+        <center>
+            <h1>Frequently Asked Questions</h1>
+            <button>What is Netflix?</button><br>
+            <button>How much does Netflix cost?</button><br>
+            <button>Where can I watch?</button><br>
+            <button>How do I cancel?</button><br>
+            <button>What can I watch on Netflix?</button><br>
+            <button>Is Netflix good for kids?</button><br>
+        </center>
+    </div>
+    <span class="hmmm">
+        <center>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="text">
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <button>Get Started ></button>
+        </center>
+        </div>
+    </span>
+    <hr class="hmm">
+    <div class="list">
+        <ul>
+            <div class="links">
+                <li><a href="#">Questions? Contact us.</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+                <select name="lang" id="lang">
+                    <option value="English">English</option>
+                </select>
+                <li><a href="#">Netflix Pakistan</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="list1">
+        <ul>
+            <div class="links1">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="list2">
+        <ul>
+            <div class="links2">
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Only on Netflix</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="list3">
+        <ul>
+            <div class="links3">
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
