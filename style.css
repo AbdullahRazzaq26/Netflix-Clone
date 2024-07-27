@@ -55,10 +55,18 @@ body {
     cursor: pointer;
     margin-left: 150vh;
     margin-bottom: 25vh;
-    font-size: 1.9vh;
+    font-size: 1.5vh;
     position: absolute;
     left: 2vh;
     top: 7.5vh;
+    padding: 1.2vh;
+    box-sizing: border-box;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6vh;
 }
 
 .logo button {
@@ -107,16 +115,17 @@ body {
     background-color: rgb(229, 9, 20);
     border: none;
     color: white;
-    width: 24vh;
-    height: 5.7vh;
+    width: 20vh;
+    height: 6vh;
     border-radius: 0.5vh;
-    font-size: 2vh;
-    font-weight: bolder;
+    font-size: 2.5vh;
     cursor: pointer;
+    font-weight: 545;
+    padding: 1vh;
 }
 
 .text button:hover {
-    background-color: rgba(229, 9, 20, 0.581);
+    background-color: rgba(229, 9, 20, 0.749);
 }
 
 hr {
@@ -130,12 +139,15 @@ hr {
     font-size: 2.5vh;
     display: inline-block;
     position: absolute;
-    top: 15vh;
+    top: 24.7vh;
     line-height: 1.5;
 }
 
 .left h1 {
     margin-bottom: 0.5vh;
+    font-weight: 900;
+    font-size: 5vh;
+    font-size: 5vh;
 }
 
 .sec2 {
@@ -149,20 +161,20 @@ hr {
     display: inline-block;
     margin-left: 7vh;
     position: absolute;
-    top: 0.4vh;
-    left: 105vh;
+    top: 8.2vh;
+    left: 93vh;
     z-index: 1;
-    width: 74vh;
-    height: 60vh;
+    width: 59vh;
+    height: 45vh;
 }
 
 .sec2 video {
     margin-left: 112vh;
     position: absolute;
-    top: 9vh;
-    left: 10vh;
-    width: 56vh;
-    height: 39vh;
+    top: 15.9vh;
+    right: 47vh;
+    width: 42.6vh;
+    height: 27.5vh;
 }
 
 .hmm {
@@ -231,6 +243,9 @@ span {
 
 .right1 h1 {
     margin-bottom: 1vh;
+    font-weight: 900;
+    font-size: 5vh;
+    font-size: 5vh;
 }
 
 .sec4 {
@@ -248,6 +263,9 @@ span {
 
 .left2 h1 {
     margin-bottom: 1.3vh;
+    font-weight: 900;
+    font-size: 5vh;
+    font-size: 5vh;
 }
 
 .sec5 {
@@ -274,6 +292,9 @@ span {
 
 .right2 h1 {
     margin-bottom: 1.3vh;
+    font-weight: 900;
+    font-size: 5vh;
+    font-size: 5vh;
 }
 
 .que {
@@ -283,6 +304,9 @@ span {
 .que h1 {
     margin-top: 2vh;
     margin-bottom: 2vh;
+    font-weight: 900;
+    font-size: 5vh;
+    font-size: 5vh;
 }
 
 .que button {
